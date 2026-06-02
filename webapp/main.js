@@ -1,4 +1,5 @@
-const base = "Imatges";
+const scriptPath = document.currentScript?.getAttribute("src") || "";
+const base = scriptPath.includes("webapp/") ? "webapp/Imatges" : "Imatges";
 
 const assets = {
   escenaris: {
